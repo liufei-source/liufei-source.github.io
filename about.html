@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘飞 - 交互设计</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">主页</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">作品</li>
+                <li class="magical btn nav" onclick="window.location.href='./about.html'">关于</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">主页</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">作品</li>
+                    <li class="magical btn nav" onclick="window.location.href='./about.html'">关于</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+    <div class="about">
+        <div class="about-top">
+            <div class="about-name">刘飞</div>
+            <div class="about-info">
+                <div class="about-info-left">
+                    <div class="about-info-title">Introduce</div>
+                    <div class="introduce-desc">
+                        目前是一名交互设计师，熟悉ToB角色化思维，ToC人性化思维，各大系统类别(ERP、CRM、OA、、BI、SCM、HRM、Data人），交付模式、技术架构。具有一定的数据分析能力，擅长数据化设计，独到新颖的专研能力，做事严谨；注重工作效率、沟通能力、个人多维能力的提升<br><br>
+                        我专注于探索交互设计的价值观，从用户共情能力、同理心、等层面不断优化自身专业性，此外从各种方面研究心理学，学习前端基本实现逻辑，关注团队各个岗位相关内容并学习了解<br><br>
+                    </div>
+                </div>
+                <div class="about-info-right">
+                    <div class="contact">
+                        <div class="about-info-title">联系</div>
+                        <div class="contact-desc">
+                            <div class="list">
+                                <div class="list-label">Email：</div>
+                                <div href="javascript:" class="list-value" id="email" tabindex="0" role="button"  title="点击复制邮箱">
+                                    <a id="emailCopied">1712069509@qq.com</a>
+                                </div>
+                                <span class="list-value copied">copied&nbsp;✓</span>
+                            </div>
+                            <div class="list">
+                                <div class="list-label">Wechat：</div>
+                                <div class="list-value">
+                                    <a class="tooltip">yyglm666
+                                        <div class="tooltip-box">
+                                            <img src="./assets/about/wechat.jpg">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <div class="about-info-title resume-title">简历</div>
+                        <div class="resume-desc">
+                            <div class="resume-desc-helptext">下载我的简历 (PDF & 1MB)</div>
+                            <div class="magical resume-btn"><a href="https://docs.qq.com/pdf/DQ3VXZ1lpdlR1WmRV?u=0fa7cd2aaa994c65bd9fe5bac5818857" target="_blank">下载</a></div>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <div class="about-info-title resume-title">作品集</div>
+                        <div class="resume-desc">
+                            <div class="resume-desc-helptext">下载我的作品集 (PDF & 1MB)</div>
+                            <div class="magical resume-btn"><a href="https://docs.qq.com/pdf/DQ0xMUG5vY2lyYURJ?u=0fa7cd2aaa994c65bd9fe5bac5818857" target="_blank">下载</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-middle">
+            <div class="power">
+                <div class="list-00">
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">3</div>
+                            <div class="card-text">工作年限</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">5⁺</div>
+                            <div class="card-text">项目</div>
+                        </a>
+                    </div>
+                    
+                    <div class="magical power-card-number">
+                        <a>
+                            <div class="card-title">1</div>
+                            <div class="card-text">外观专利</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="list-01">
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/abstract.svg')"></div>
+                            <div class="card-text">结构、系统化设计思维，注重逻辑与数据驱动</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/menu.svg')"></div>
+                            <div class="card-text">体系化设计资产落地经验，深耕设计系统领域</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/code.svg')"></div>
+                            <div class="card-text">开发、角色共情能力，利用工程化思维解决问题</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/pin.svg')"></div>
+                            <div class="card-text">体验研发团队管理经验，助力产研上下游</div>
+                        </a>
+                    </div>
+                    <div class="magical power-card">
+                        <a>
+                            <div class="card-img" style="background-image: url('./assets/about/pen.svg')"></div>
+                            <div class="card-text">丰富的 B、C 端产品设计经验，像素强迫症</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-bottom">
+            <div class="experience">
+                <div class="item">
+                    <div class="time">❖ 2022.05 ~ Now</div>
+                    <div class="name">
+                        <div class="company"><a href="https://aiqicha.baidu.com/company_detail_85793384370462" target="_blank">杭州智汇明壹医疗科技有限公司 ↗</a></div>
+                        <div class="job">交互设计</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">工作内容</div>
+                            <div class="desc">
+                                <ul>
+                                    
+                                    <li>业务逻辑梳理分析</li>
+                                    <li>产出角色业务流程图</li>
+                                    <li>产品原型图输出</li>
+                                    <li>交互文档、交互演示输出</li>
+                                    <li>高保真图视觉把控及高保真图输出</li>
+                                    <li>软件组件库规范整理</li>
+                                    <li>前端落地跟进</li>
+                                    <li>视觉验收及交互验收</li>
+                                    <li>公司 logo 、视觉 设计</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="time">❖ 2021.07 ~ 2022.04</div>
+                    <div class="name">
+                        <div class="company"><a href="https://www.keqin-it.com/" target="_blank">克勤信息技术有限公司 ↗</a></div>
+                        <div class="job">视觉、UI设计</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">工作内容</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>小程序平面视觉设计，P图，公众号排版设计，直播间KT版设计，活动海报设计，;</li>
+                                    <li>小程序UI设计，H5设计，动效设计;</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="time">❖ 2020.04 ~ 2020.12</div>
+                    <div class="name">
+                        <div class="company"><a href="https://yingekeji.com/#classify" target="_blank">杭州印鸽科技有限公司（实习） ↗</a></div>
+                        <div class="job">平面设计</div>
+                    </div>
+                    <div class="project-experience">
+                        <div class="item">
+                            <div class="title">工作内容</div>
+                            <div class="desc">
+                                <ul>
+                                    <li>海报设计，banner设计，详情页设计</li>
+                                    <li>ui设计，动效设计.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+    <div class="widget">
+        <div class="shape-light"></div>
+        <div class="shape-star">
+            <div class="rising-stars rising-stars-visible">
+                <div style="height:1px;width:1px"></div>
+                <div style="height:2px;width:2px"></div>
+                <div style="height:1px;width:1px"></div>
+            </div>
+        </div>
+        <div class="shape-earth"></div>
+    </div>
+</body>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+</html>

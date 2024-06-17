@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="color-scheme: dark;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘飞 - 交互设计</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="./assets/public/favicon.svg"/>
+</head>
+<body>
+    <canvas class="fireworks"></canvas>
+    <div class="head">
+        <div class="main">
+            <a href="./index.html" class="logo"><img src="./assets/public/logo_text.svg"></a>
+            <div class="menu">
+                <li class="magical btn" onclick="window.location.href='./index.html'">主页</li>
+                <li class="magical btn nav" onclick="window.location.href='./work.html'">作品</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">关于</li>
+            </div>
+            <div class="menu" id="menu-expand">
+                <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
+            </div>
+            <div id="menu-panel">
+                <div class="menu-panel-content">
+                    <li class="magical btn" onclick="window.location.href='./index.html'">主页</li>
+                    <li class="magical btn nav" onclick="window.location.href='./work.html'">作品</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">关于</li>
+                </div>
+            </div>
+        </div>
+        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div>
+    
+        <div class="work">
+            <div class="card-list">
+                <div class="magical item">
+                    <a href="https://www.zcool.com.cn/work/ZNjg2MTQ1MDA=.html" target="_blank">
+                        <div class="dark"><img class="cover" src="./assets/work/tob.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">TOB交互作品集</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-2b">TOB</div>
+                            </div>
+                            <div class="desc">TOB原型图、高保真、插画、图标等</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="https://www.zcool.com.cn/work/ZNjg4MTU2NDA=.html" target="_blank">
+                        <div class="dark"><img class="cover" src="./assets/work/APP.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">APP</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-assets">APP</div>
+                            </div>
+                            <div class="desc">APP端视觉设计、UI设计等</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="https://www.zcool.com.cn/work/ZNjg4MjExNjg=.html" target="_blank">
+                        <div class="dark"><img class="cover" src="./assets/work/Dynamic effect.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">动效设计</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-web">练习</div>
+                            </div>
+                            <div class="desc">一些动效设计</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="https://www.zcool.com.cn/work/ZNjg4MTk4NjQ=.html" target="_blank">
+                        <div class="dark"><img class="cover" src="./assets/work/平面设计.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">平面设计作品</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-app">平面设计</div>
+                            </div>
+                            <div class="desc">LOGO、公众号、详情页等</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="magical item">
+                    <a href="javascript:void(0)" target="_blank">
+                        <div class="dark"><img class="cover" src="./assets/work/empty.png"></div>
+                        <div class="text">
+                            <div class="title-area">
+                                <div class="title">
+                                    <div class="name">waiting...</div>
+                                    <div class="name link"> ↗</div>
+                                </div>
+                                <div class="tag tag-2b">other</div>
+                            </div>
+                            <div class="desc">期待与您的合作共建</div>
+                        </div>
+                    </a>
+                
+                
+            </div>
+       
+        </div>
+        <div class="widget">
+            <div class="shape-light"></div>
+            <div class="shape-star">
+                <div class="rising-stars rising-stars-visible">
+                    <div style="height:1px;width:1px"></div>
+                    <div style="height:2px;width:2px"></div>
+                    <div style="height:1px;width:1px"></div>
+                </div>
+            </div>
+            <div class="shape-earth"></div>
+        </div>
+        
+</body>
+<script>
+    window.addEventListener("mousemove", function (e) {
+        document.querySelectorAll(".magical").forEach(element => {
+            const rect = element.getBoundingClientRect();
+            const offsetX = e.clientX - rect.left;
+            const offsetY = e.clientY - rect.top;
+            element.style.setProperty("--mouse-x", `${offsetX}px`);
+            element.style.setProperty("--mouse-y", `${offsetY}px`);
+        });
+    });
+</script>
+<script src="./js/main.min.js"></script>
+<script src='./js/anime.js'></script>
+<script src='./js/firework.js'></script>
+</html>
